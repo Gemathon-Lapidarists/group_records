@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["vaibhav.khl@gmail.com"]
   spec.summary       = %q{groups the record on basis of created_at}
   spec.description   = %q{groups the record on basis of created_at}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/Gemathon-Lapidarists/group_records"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
