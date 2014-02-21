@@ -12,16 +12,15 @@ This gem provides two methods which returns hash having keys as month or year an
  2. group_by_year
 
 Example Usage -
-
+```ruby
 class PostsController < ApplicationController
-
   def index
     @posts = Post.all
     @posts_months = @posts.group_by_month
   end
 end
-
+```
 viewing @posts_months in rails console - 
-
+```ruby
 {"January 2014"=>[#<Post id: 8, title: "sample">]}
-
+```
