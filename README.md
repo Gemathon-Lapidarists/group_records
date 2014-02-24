@@ -22,7 +22,7 @@ class PostsController < ApplicationController
   end
 end
 ```
-Or more succintly
+Or more succinctly
 ```ruby
 @posts_months = Post.all.group_by_month
 ```
