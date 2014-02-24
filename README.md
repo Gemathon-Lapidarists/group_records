@@ -11,6 +11,8 @@ This gem provides two methods which returns hash having keys as month or year an
  1. group_by_month
  2. group_by_year
 
+The order of the keys returned are sorted on the basis of created_at.
+
 Example Usage -
 ```ruby
 class PostsController < ApplicationController
@@ -20,6 +22,11 @@ class PostsController < ApplicationController
   end
 end
 ```
+Or more succintly
+```ruby
+@posts_months = Post.all.group_by_month
+```
+
 viewing @posts_months in rails console - 
 ```ruby
 {"January 2014"=>[#<Post id: 8, title: "sample">]}
